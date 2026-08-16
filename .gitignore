@@ -1,0 +1,45 @@
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+.vscode/
+
+# Arduino IDE
+build/
+*.hex
+*.elf
+*.bin
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Scanner + RNS output. Capture logs contain MACs, SSIDs, timestamps and
+# implicitly the locations you were scanning from. Reports are generated
+# from them, so both stay local.
+*.log
+scan_*.csv
+report*.html
+.reticulum/
+
+# Real Reticulum configs. config_example is the committed template;
+# a live config names your interfaces and can carry shared-instance
+# details, so it stays local.
+**/config
+!**/config_example
+
+# Board identity private keys. NODE_PRIVATE_KEY_HEX lives in this
+# header, one per board, and must never be committed. The .example
+# file is the committed template.
+firmware/reticulum-node/src/node_identity.h
+*.key
+*private_key*
+identity*
+!*.example.h
+
+# OS
+.DS_Store
+Thumbs.db

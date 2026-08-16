@@ -1,0 +1,29 @@
+# Minimal Reticulum config for local sanity-testing listener.py and
+# send_test_announce.py -- no LoRa/radio hardware needed.
+#
+# Copy this to ~/.reticulum/config (back up any existing config first
+# if you already have one from other Reticulum use).
+#
+# AutoInterface uses local network multicast to discover other
+# Reticulum instances on the same LAN/WiFi -- this is how
+# listener.py and send_test_announce.py will find each other if run
+# on the same machine or two machines on the same network.
+#
+# This is a TEST config for validating the protocol side only. It
+# will NOT let your laptop hear the ESP32's actual LoRa transmissions
+# -- that needs a LoRa radio attached to whatever runs this config.
+
+[reticulum]
+enable_transport = False
+share_instance = True
+shared_instance_port = 37428
+instance_control_port = 37429
+
+[logging]
+loglevel = 4
+
+[interfaces]
+
+  [[Default Interface]]
+    type = AutoInterface
+    enabled = true
