@@ -1,0 +1,8 @@
+// Copy this file to include/node_key.h (which is gitignored) and replace the
+// placeholder below with a key generated for THIS board.
+//
+//   python3 -c "import secrets; print(secrets.token_hex(65))"
+//
+// Every board needs its own key. Never commit the real one.
+#pragma once
+#define NODE_PRIVATE_KEY_HEX "REPLACE_WITH_130_HEX_CHARACTERS_FROM_THE_COMMAND_ABOVE_________________________________________________________"

@@ -1,0 +1,13 @@
+Flock Detection + Reticulum Mesh Node
+Copyright 2026 Chanoism
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product includes software developed by third parties. See
+THIRD_PARTY_NOTICES.md for the full list and license texts, including:
+
+  - microReticulum (attermann), Apache-2.0: lib/lora_interface/ is derived
+    from its examples/common/lora_interface/ and has been modified.
+  - flock-you (colonelpanichacks), MIT: detection tiers, channel hopping and
+    IE fingerprint logic are ported from it.
+  - nite-oui-collection (nitekry), MIT: source of the OUI list.

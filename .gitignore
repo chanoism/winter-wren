@@ -1,0 +1,12 @@
+# PlatformIO
+.pio/
+.vscode/
+*.pyc
+
+# Per-board secrets: never commit
+include/node_key.h
+
+# Serial captures can contain third-party MAC addresses
+*.log
+captures/
+.DS_Store
