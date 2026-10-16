@@ -60,7 +60,7 @@ private:
 	// Radio parameters (RadioLib units: MHz, kHz)
 	const float frequency = 915.0;   // MHz -- US / FCC Part 15.247
 	const float bandwidth = 125.0;   // kHz
-	const int   spreading = 8;
+	const int   spreading = 12; // Change and compromise for busy base station in the future, highest Spreading Factor for testing purposes
 	const int   coding    = 5;
 	const int   power     = 17;      // dBm
 
